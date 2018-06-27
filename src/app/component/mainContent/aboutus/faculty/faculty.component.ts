@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { facultyDetails } from '../../../../constant/applicationDetails.constant';
 
 @Component({
   selector: 'app-faculty',
@@ -6,10 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./faculty.component.css']
 })
 export class FacultyComponent implements OnInit {
+  readonly facultyDetails = facultyDetails;
 
-  constructor() { }
+  constructor() {
+
+  }
 
   ngOnInit() {
+
   }
 
 }

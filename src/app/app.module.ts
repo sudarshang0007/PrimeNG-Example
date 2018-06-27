@@ -21,6 +21,8 @@ import { AdmissionComponent } from './component/mainContent/admission/admission.
 import { PrincipalComponent } from './component/mainContent/aboutus/principal/principal.component';
 import { FacultyComponent } from './component/mainContent/aboutus/faculty/faculty.component';
 import { ContactComponent } from './component/mainContent/aboutus/contact/contact.component';
+import {CardModule} from 'primeng/card';
+
 
 
 @NgModule({
@@ -55,7 +57,8 @@ import { ContactComponent } from './component/mainContent/aboutus/contact/contac
     MatGridListModule,
     MatCardModule,
     MatMenuModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

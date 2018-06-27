@@ -5,3 +5,7 @@ html, body{
 }
 
 body { margin: 0; }
+
+main-container {
+    padding:10px;
+}

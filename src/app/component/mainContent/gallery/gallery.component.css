@@ -1,0 +1,18 @@
+.grid img{
+    width: 100%;
+    margin-bottom: 4px;
+}
+
+.grid img:hover{
+    cursor: pointer;
+    -webkit-filter: grayscale(1.5);
+    -moz-filter: grayscale(1.5);
+    -o-filter: grayscale(1.5);
+    -ms-filter: grayscale(1.5);
+    filter: grayscale(1.5);
+
+    transform: scale(1.10);
+    
+
+    z-index:10;
+}
