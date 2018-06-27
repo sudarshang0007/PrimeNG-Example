@@ -1,0 +1,1 @@
+export const applicationName = 'College of Pharmacy, Akluj';

@@ -1,0 +1,30 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport="true" [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+    [mode]="over" [opened]="false">
+    <mat-toolbar color="primary">Menu</mat-toolbar>
+    <mat-nav-list>
+      <a mat-list-item *ngFor="let menu of menuList" [routerLink]="menu.link ? menu.link : '' " (click)="menu.subMenu ? drawer.open() :drawer.toggle()">{{menu.name}}
+        <div *ngIf="menu.subMenu">
+          
+           <button mat-button [matMenuTriggerFor]="menux">
+              <mat-icon >play_arrow</mat-icon>
+          </button> 
+          <mat-menu #menux="matMenu">
+            <a mat-menu-item *ngFor="let submenu of menu.subMenu" [routerLink]="submenu.link" (click)="drawer.toggle()">{{submenu.name}}</a>
+          </mat-menu>
+        </div>
+      </a>
+    </mat-nav-list>
+
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <!-- *ngIf="isHandset$ | async" -->
+      <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      <span>{{applicationName}}</span>
+    </mat-toolbar>
+  </mat-sidenav-content>
+
+</mat-sidenav-container>
