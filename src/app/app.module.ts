@@ -22,6 +22,7 @@ import { PrincipalComponent } from './component/mainContent/aboutus/principal/pr
 import { FacultyComponent } from './component/mainContent/aboutus/faculty/faculty.component';
 import { ContactComponent } from './component/mainContent/aboutus/contact/contact.component';
 import {CardModule} from 'primeng/card';
+import { PopupComponent } from './popup/popup.component';
 
 
 
@@ -41,7 +42,8 @@ import {CardModule} from 'primeng/card';
     AdmissionComponent,
     PrincipalComponent,
     FacultyComponent,
-    ContactComponent
+    ContactComponent,
+    PopupComponent
   ],
   imports: [
     BrowserModule,
