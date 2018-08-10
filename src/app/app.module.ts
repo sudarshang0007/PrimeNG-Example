@@ -21,7 +21,11 @@ import { AdmissionComponent } from './component/mainContent/admission/admission.
 import { PrincipalComponent } from './component/mainContent/aboutus/principal/principal.component';
 import { FacultyComponent } from './component/mainContent/aboutus/faculty/faculty.component';
 import { ContactComponent } from './component/mainContent/aboutus/contact/contact.component';
-import {CardModule} from 'primeng/card';
+import { CardModule } from 'primeng/card';
+import { GalleryViewerComponent } from './component/GalleryPopup/gallery-viewer/gallery-viewer.component';
+import { MatTabsModule } from '@angular/material/tabs';
+import { StudentDetailsComponent } from './component/mainContent/student/student-details/student-details.component';
+import { HeaderFlagComponent } from './component/header-flag/header-flag.component';
 
 
 
@@ -41,7 +45,10 @@ import {CardModule} from 'primeng/card';
     AdmissionComponent,
     PrincipalComponent,
     FacultyComponent,
-    ContactComponent
+    ContactComponent,
+    GalleryViewerComponent,
+    StudentDetailsComponent,
+    HeaderFlagComponent
   ],
   imports: [
     BrowserModule,
@@ -58,7 +65,8 @@ import {CardModule} from 'primeng/card';
     MatCardModule,
     MatMenuModule,
     AppRoutingModule,
-    CardModule
+    CardModule,
+    MatTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
