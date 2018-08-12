@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-header-flag',
@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header-flag.component.css']
 })
 export class HeaderFlagComponent implements OnInit {
+  @Input() firstMessage: string='erter';
+
+  @Input() secondMessage: string='fgdf';
 
   constructor() { }
 
