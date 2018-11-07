@@ -26,6 +26,12 @@ import { GalleryViewerComponent } from './component/GalleryPopup/gallery-viewer/
 import { MatTabsModule } from '@angular/material/tabs';
 import { StudentDetailsComponent } from './component/mainContent/student/student-details/student-details.component';
 import { HeaderFlagComponent } from './component/header-flag/header-flag.component';
+import { GrievanceComponent } from './component/mainContent/grievance/grievance.component';
+import { AddComponent } from './component/mainContent/grievance/add/add.component';
+import { LoginComponent } from './component/mainContent/grievance/login/login.component';
+import { HttpClientModule } from '../../node_modules/@angular/common/http';
+import { StudentHistoryComponent } from './component/mainContent/grievance/student-history/student-history.component';
+import { FormsModule } from '../../node_modules/@angular/forms';
 
 
 
@@ -48,10 +54,16 @@ import { HeaderFlagComponent } from './component/header-flag/header-flag.compone
     ContactComponent,
     GalleryViewerComponent,
     StudentDetailsComponent,
-    HeaderFlagComponent
+    HeaderFlagComponent,
+    GrievanceComponent,
+    AddComponent,
+    LoginComponent,
+    StudentHistoryComponent
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
+    FormsModule,
     BrowserAnimationsModule,
     ButtonModule,
     GalleriaModule,

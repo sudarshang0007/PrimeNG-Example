@@ -1,0 +1,37 @@
+<div class="col-lg-12">
+
+
+
+</div>
+<form  #uploadForm="ngForm">
+  <div class="form-group">
+    <label for="title">Grievance Title</label>
+    <input type="text" class="form-control" id="title" name="title" [(ngModel)]="title" placeholder="Specify the title" required>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-4">
+      <label for="name">name</label>
+      <input type="text" class="form-control" id="name" name="name" length="25" [(ngModel)]="name" placeholder="Enter Your Name" required>
+      <small class="text-muted">Name length should be 25 character </small>
+    </div>
+    <div class="form-group col-md-4">
+      <label for="contact">Contact No.</label>
+      <input type="number" class="form-control" id="contact" name="contact" [(ngModel)]="contact" placeholder="Specify the title" required>
+    </div>
+    <div class="form-group col-md-4">
+      <label for="Type">Type</label>
+      <select class="form-control" id="type" name="type" [(ngModel)]="type" required>
+        <option>Academic</option>
+        <option>Non-Academic</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="details">Describe in details (max. 750 Characters)</label>
+    <textarea class="form-control" id="details" name="details" [(ngModel)]="details" rows="4" placeholder="Description goes here" required></textarea>
+  </div>
+
+  <input type="hidden" name="date" id="date" value="{{date | date: 'dd/MMM/yyyy'}}">
+  <button type="button" class="btn btn-primary" (click)="insertGrievance();uploadForm.reset()" 
+  [disabled]="!name || !type || !details || !contact || !title" >Submit</button>
+</form>

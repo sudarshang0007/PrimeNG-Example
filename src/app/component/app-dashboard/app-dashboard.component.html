@@ -49,7 +49,7 @@
     <!-- Call to Action Well -->
     <div class="card text-white bg-secondary my-4 text-center">
       <div class="card-body">
-        <p class="text-white m-0">This call to action card is a great place to showcase some important information or display a clever tagline!</p>
+        <p class="text-white m-0">Tevo Sada Dnynamaya Pradip !</p>
       </div>
     </div>
 
@@ -81,7 +81,9 @@
             <h5 class="card-title">Important Links</h5>
             <div class="card-text">
               <ul>
-
+                <li *ngFor="let link of imporatantLinks">
+                  <a href="{{link.filename ? link.filename : link.link}}" target="_blank">{{link.displayText}}</a>
+                </li>
               </ul>
             </div>
           </div>
