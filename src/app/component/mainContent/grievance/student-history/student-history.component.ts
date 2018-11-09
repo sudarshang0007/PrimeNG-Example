@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { HttpClient } from '../../../../../../node_modules/@angular/common/http';
 import { ROOT_URL } from '../../../../constant/app.constant';
+import { GrievanceServiceService } from '../../../../grievance-service.service';
 
 @Component({
   selector: 'app-student-history',
@@ -9,19 +10,16 @@ import { ROOT_URL } from '../../../../constant/app.constant';
 })
 export class StudentHistoryComponent implements OnInit {
 
-  historyList: any;
+  @Input('historyList') historyList: any;
+  @Input('isLoggedIn') isLoggedIn: boolean;
   activeGrievance: any;
 
-  constructor(private httpClient: HttpClient) {
-    this.listStudentHistory();  
+
+  constructor(private httpClient: HttpClient,
+    private grievanceService: GrievanceServiceService) {
   }
 
   ngOnInit() {
-  }
-
-  listStudentHistory(): void {
-    this.httpClient.get(ROOT_URL+'/controller/Config.php')
-      .subscribe(response => this.historyList = JSON.parse(JSON.stringify(response)));
   }
 
   viewDetailsofGrievance(index: any): void {

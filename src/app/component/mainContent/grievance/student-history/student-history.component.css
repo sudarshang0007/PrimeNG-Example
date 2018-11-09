@@ -8,3 +8,7 @@ td{
     font-size: 80%;
     font-weight: 400;
 }
+
+textarea{
+    white-space: inherit;
+}

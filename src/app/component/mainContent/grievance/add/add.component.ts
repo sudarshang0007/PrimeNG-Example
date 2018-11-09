@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 import { HttpClient, HttpHeaders } from '../../../../../../node_modules/@angular/common/http';
 import { Form, NgForm } from '../../../../../../node_modules/@angular/forms';
 import { ROOT_URL } from '../../../../constant/app.constant';
@@ -17,6 +17,9 @@ export class AddComponent implements OnInit {
   type: any;
   details: any;
   date: any;
+  reporterType: any;
+
+  @Output('command') command: EventEmitter<string> = new EventEmitter<string>();
 
   constructor(private httpClient: HttpClient) { }
 
@@ -32,12 +35,14 @@ export class AddComponent implements OnInit {
     this.data.append('type', this.type);
     this.data.append('details', this.details);
     this.data.append('date', this.date);
+    this.data.append('reporterType', this.reporterType);
 
     var headers = new HttpHeaders();
     headers.append('Content-Type', 'application/form-data');
 
-    this.httpClient.post(ROOT_URL+'/controller/insertGrievance.php', this.data, { headers: headers })
+    this.httpClient.post(ROOT_URL + '/controller/insertGrievance.php', this.data, { headers: headers })
       .subscribe(response => {
+        this.command.emit('add');
         alert(response['status'] === 'success' ? 'Data uploaded successfully !' : 'We are facing difficulties to process the data');
       }, error => {
         alert('Error occured while uploading data !');

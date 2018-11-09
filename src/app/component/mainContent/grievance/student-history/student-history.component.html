@@ -2,33 +2,26 @@
   <table class="table table-striped">
     <thead>
       <tr>
-        <th scope="col">#</th>
         <th scope="col">No</th>
         <th scope="col">Title</th>
+        <th scope="col">Reporter</th>
         <th scope="col">Status</th>
-        <th scope="col">Details</th>
+        <th scope="col"  *ngIf="isLoggedIn">Details</th>
       </tr>
     </thead>
     <tbody>
       <tr *ngFor="let item of historyList; index as i;">
-        <th scope="row">{{i+1}}</th>
         <td>{{item.grNo}}</td>
         <td>{{item.gr_title}}</td>
+        <td>{{item.name}}</td>
         <td>{{item.gr_status}}</td>
-        <td>
+        <td *ngIf="isLoggedIn">
           <button class="btn btn-sm btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg" (click)="viewDetailsofGrievance(i)">View Details</button>
         </td>
       </tr>
     </tbody>
   </table>
 </div>
-
-
-
-<!-- Large modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Large modal</button>
-
-
 
 
 <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
@@ -43,19 +36,41 @@
           </button>
         </div>
         <div class="modal-body">
-          <h5>Details:</h5>
-          <p>
-            {{activeGrievance.gr_details}}
-          </p>
-          <h5>Comments:</h5>
-          <p>
-            {{activeGrievance.gr_comments}}
-          </p>
+          
+          <div class="form-group row">
+          <div class="col-md-6" >
+              <Label>Reporter</Label>
+              <pre>{{activeGrievance.name}}</pre>
+          </div>
+          <div class=" col-md-6">
+              <Label>Contact No</Label>
+              <pre>{{activeGrievance.contact}}</pre>
+          </div>
+        </div>
+
+          <div class="form-group">
+            <label for="details">Details</label>
+            <textarea name="details" id="details"  class="form-control" disabled>
+                  {{activeGrievance.gr_details}}
+            </textarea>
+          </div>
+          <div class="form-group">
+            <label for="Comments">Comments</label>
+            <textarea name="Comments" id="Comments"  class="form-control">
+                {{activeGrievance.gr_comments}}
+            </textarea>
+          </div>
+          <div class="form-group">
+            <label for="status">Status</label>
+            <select id="status" class="form-control" >
+              <option value="PENDING">PENDING</option>
+              <option value="RESOLVED">RESOLVED</option>
+            </select>
+          </div>
           <small class="text-muted">Created on: {{activeGrievance.gr_create_date | date:'dd/MMM/yyyy'}}</small>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
         </div>
       </div>
     </div>
