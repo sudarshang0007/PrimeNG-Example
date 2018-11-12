@@ -13,7 +13,7 @@
       <input type="password" name="password" [(ngModel)]="password" class="form-control" id="password" placeholder="Password">
     </div>
     <small class="text-info">** Login portal is available for institute admin</small>
-    <button type="button" (click)="loginUser()" class="btn btn-primary" style="float: right;">Submit</button>
+    <button type="button" (click)="loginUser()" class="btn btn-primary" style="float: right;"[disabled]="loginButtondisabled">Submit</button>
   </form>
   </div>
 </div>

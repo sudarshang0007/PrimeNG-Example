@@ -5,7 +5,8 @@ export const facultyDetails = [{
     "Qualification": "M.Pharm, Ph. D.",
     "specialization": "Pharmacology",
     "experience": "Teaching …..",
-    "email": "prashantbodhe6399@gmail.com"
+    "email": "prashantbodhe6399@gmail.com",
+    "image":"https://www.qualiscare.com/wp-content/uploads/2017/08/default-user.png"
 }
 
     , {
@@ -14,7 +15,8 @@ export const facultyDetails = [{
     "Qualification": "M.Pharm.",
     "specialization": "Pharmaceutical Chemistry",
     "experience": "Teaching",
-    "email": "anil.bhanawase@gmail.com"
+    "email": "anil.bhanawase@gmail.com",
+    "image":"https://www.qualiscare.com/wp-content/uploads/2017/08/default-user.png"
 },
 {
     "name": "Mr. S. A. Khedkar",
@@ -22,7 +24,8 @@ export const facultyDetails = [{
     "Qualification": "M.Pharm.",
     "specialization": "Pharmaceutical Chemistry",
     "experience": "Teaching 8 yrs",
-    "email": "samratkhedkar@yahoo.in"
+    "email": "samratkhedkar@yahoo.in",
+    "image":"https://www.qualiscare.com/wp-content/uploads/2017/08/default-user.png"
 }
     , {
     "name": "Mrs. N. S. Kajale",
@@ -30,7 +33,8 @@ export const facultyDetails = [{
     "Qualification": "M.Pharm.",
     "specialization": "Pharmaceutics",
     "experience": "Teaching 6.3 yrs",
-    "email": "cssgrs@gmail.com"
+    "email": "cssgrs@gmail.com",
+    "image":"https://www.qualiscare.com/wp-content/uploads/2017/08/default-user.png"
 },
 {
     "name": "Mrs. R. R. Sayyad",
@@ -38,7 +42,8 @@ export const facultyDetails = [{
     "Qualification": "M.Pharm.",
     "specialization": "Pharmacology",
     "experience": "Teaching 6 yrs",
-    "email": "raziya.shaikh2010@rediffmail.com"
+    "email": "raziya.shaikh2010@rediffmail.com",
+    "image":"https://www.qualiscare.com/wp-content/uploads/2017/08/default-user.png"
 },
 {
     "name": "Mr. S. R. Nazarkar",
@@ -46,7 +51,8 @@ export const facultyDetails = [{
     "Qualification": "M.Pharm.",
     "specialization": "Quality Assurance",
     "experience": "Teaching 6 yrs",
-    "email": "nazarkarswapnil@gmail.com"
+    "email": "nazarkarswapnil@gmail.com",
+    "image":"https://www.qualiscare.com/wp-content/uploads/2017/08/default-user.png"
 },
 {
     "name": "Miss. P. G. Shinde",
@@ -54,7 +60,8 @@ export const facultyDetails = [{
     "Qualification": "M.Pharm.",
     "specialization": "Pharmaceutical Chemistry",
     "experience": "Teaching 6 yrs",
-    "email": "prashali.shinde@gmail.com"
+    "email": "prashali.shinde@gmail.com",
+    "image":"https://www.qualiscare.com/wp-content/uploads/2017/08/default-user.png"
 },
 
 {
@@ -63,7 +70,8 @@ export const facultyDetails = [{
     "Qualification": "M.Pharm.",
     "specialization": "Pharmaceutics",
     "experience": "Teaching 5 yrs",
-    "email": "prasad5605@gmail.com"
+    "email": "prasad5605@gmail.com",
+    "image":"https://www.qualiscare.com/wp-content/uploads/2017/08/default-user.png"
 },
 
 {
@@ -72,7 +80,8 @@ export const facultyDetails = [{
     "Qualification": "M.Pharm.",
     "specialization": "Pharmacology",
     "experience": "Teaching 4 yrs",
-    "email": "sampatpharma@gmail.com"
+    "email": "sampatpharma@gmail.com",
+    "image":"https://www.qualiscare.com/wp-content/uploads/2017/08/default-user.png"
 },
 {
     "name": "Miss. P. N. Shinde",
@@ -80,7 +89,8 @@ export const facultyDetails = [{
     "Qualification": "M.Pharm.",
     "specialization": "Pharmaceutical Chemistry",
     "experience": "Teaching 4 yrs",
-    "email": "devishree.shinde7@gmail.com"
+    "email": "devishree.shinde7@gmail.com",
+    "image":"https://www.qualiscare.com/wp-content/uploads/2017/08/default-user.png"
 },
 {
     "name": "Miss. R. V. Manedeshmukh",
@@ -88,7 +98,8 @@ export const facultyDetails = [{
     "Qualification": "M.Pharm.",
     "specialization": "Pharmacology",
     "experience": "Teaching 4 yrs",
-    "email": "manedeshmukh.reshma@gmail.com"
+    "email": "manedeshmukh.reshma@gmail.com",
+    "image":"https://www.qualiscare.com/wp-content/uploads/2017/08/default-user.png"
 },
 {
     "name": "Mr. S. I. Medli",
@@ -96,7 +107,8 @@ export const facultyDetails = [{
     "Qualification": "M.Pharm.",
     "specialization": "Pharmacognocy",
     "experience": "Teaching 1 yrs",
-    "email": "sanj.mady@gmail.com"
+    "email": "sanj.mady@gmail.com",
+    "image":"https://www.qualiscare.com/wp-content/uploads/2017/08/default-user.png"
 }
     , {
     "name": "Miss. S. V. Sawant",
@@ -104,7 +116,8 @@ export const facultyDetails = [{
     "Qualification": "M.Pharm.",
     "specialization": "Pharmaceutics",
     "experience": "Teaching 8 months",
-    "email": "sanjivanivsawant@gmail.com"
+    "email": "sanjivanivsawant@gmail.com",
+    "image":"https://www.qualiscare.com/wp-content/uploads/2017/08/default-user.png"
 },
 {
     "name": "Mr. M. M. Gade",
@@ -112,7 +125,8 @@ export const facultyDetails = [{
     "Qualification": "M.Pharm.",
     "specialization": "Pharmaceutics",
     "experience": "Teaching 6 Months",
-    "email": "mukundgade09@gmail.com"
+    "email": "mukundgade09@gmail.com",
+    "image":"https://www.qualiscare.com/wp-content/uploads/2017/08/default-user.png"
 },
 {
     "name": "Miss. U. S. Hon",
@@ -120,5 +134,6 @@ export const facultyDetails = [{
     "Qualification": "M.Pharm.",
     "specialization": "Pharmacognocy",
     "experience": "Teaching 6 Months",
-    "email": ""
+    "email": "",
+    "image":"https://www.qualiscare.com/wp-content/uploads/2017/08/default-user.png"
 }];

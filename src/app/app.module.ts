@@ -32,6 +32,7 @@ import { LoginComponent } from './component/mainContent/grievance/login/login.co
 import { HttpClientModule } from '../../node_modules/@angular/common/http';
 import { StudentHistoryComponent } from './component/mainContent/grievance/student-history/student-history.component';
 import { FormsModule } from '../../node_modules/@angular/forms';
+import { NgxSpinnerModule } from 'ngx-spinner';
 
 
 
@@ -78,7 +79,8 @@ import { FormsModule } from '../../node_modules/@angular/forms';
     MatMenuModule,
     AppRoutingModule,
     CardModule,
-    MatTabsModule
+    MatTabsModule,
+    NgxSpinnerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

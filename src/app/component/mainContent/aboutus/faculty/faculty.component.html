@@ -4,7 +4,7 @@
   <div class="col-sm-4 profile" *ngFor="let faculty of facultyDetails ">
     <p-card styleClass="ui-card-shadow">
       <p-header>
-        <img src="Card" src="assets/showcase/images/usercard.png">
+        <img src="Card" src="{{faculty.image}}">
       </p-header>
 
       <h5 class="mb-0">{{faculty.name}}</h5>

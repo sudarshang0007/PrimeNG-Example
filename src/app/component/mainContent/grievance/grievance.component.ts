@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { GrievanceServiceService } from '../../../grievance-service.service';
+import { NgxSpinnerService } from '../../../../../node_modules/ngx-spinner';
 
 @Component({
   selector: 'app-grievance',
@@ -14,7 +15,7 @@ export class GrievanceComponent implements OnInit {
   isLoggedIn = false;
   complaintList: any;
 
-  constructor(private grievanceService: GrievanceServiceService) {
+  constructor(private grievanceService: GrievanceServiceService,private ngxSpinner:NgxSpinnerService) {
     this.setUserProfile();
   }
 
@@ -31,11 +32,13 @@ export class GrievanceComponent implements OnInit {
 
 
   fetchGrievanceList(): void {
+    this.ngxSpinner.show();
     this.grievanceService.listStudentHistory()
       .subscribe((response) => {
-        this.complaintList = JSON.parse(JSON.stringify(response))
+        this.complaintList = JSON.parse(JSON.stringify(response));
+        this.ngxSpinner.hide();
       },
-        error => { console.log(error); },
+        error => { console.log(error); this.ngxSpinner.hide();},
         () => { }
       );
   }

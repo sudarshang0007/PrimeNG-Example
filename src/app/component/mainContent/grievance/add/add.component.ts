@@ -1,7 +1,7 @@
 import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 import { HttpClient, HttpHeaders } from '../../../../../../node_modules/@angular/common/http';
-import { Form, NgForm } from '../../../../../../node_modules/@angular/forms';
 import { ROOT_URL } from '../../../../constant/app.constant';
+import { NgxSpinnerService } from '../../../../../../node_modules/ngx-spinner';
 
 @Component({
   selector: 'app-add',
@@ -21,7 +21,7 @@ export class AddComponent implements OnInit {
 
   @Output('command') command: EventEmitter<string> = new EventEmitter<string>();
 
-  constructor(private httpClient: HttpClient) { }
+  constructor(private httpClient: HttpClient,private ngxSpinner:NgxSpinnerService) { }
 
   ngOnInit() {
     this.date = new Date();
@@ -40,12 +40,16 @@ export class AddComponent implements OnInit {
     var headers = new HttpHeaders();
     headers.append('Content-Type', 'application/form-data');
 
+    this.ngxSpinner.show();
+
     this.httpClient.post(ROOT_URL + '/controller/insertGrievance.php', this.data, { headers: headers })
       .subscribe(response => {
         this.command.emit('add');
         alert(response['status'] === 'success' ? 'Data uploaded successfully !' : 'We are facing difficulties to process the data');
+        this.ngxSpinner.hide();
       }, error => {
         alert('Error occured while uploading data !');
+        this.ngxSpinner.hide();
       });
   }
 
