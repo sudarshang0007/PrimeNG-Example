@@ -3,4 +3,5 @@ export const importantLinks = [
     {displayText: 'NIRF-2018', filename: './assets/documentation/imp/allReportMHRD.pdf', link: ''},
     {displayText: 'National Academy Depository', filename: '', link: 'http://www.nad.gov.in'},
     {displayText: 'NAD - Students User Guide', filename: '', link: ''},
+    {displayText: 'Mandatory Disclosure', filename: './assets/documentation/imp/Mandatory Disclosure.pdf', link: ''},
 ];
