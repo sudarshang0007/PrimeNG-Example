@@ -500,7 +500,7 @@ Defines the brand colors used in the css accessible from JS
 
 ``` js
 App.controller('ExampleCtrl', ['APP_COLORS', function(colors) {
-  console.log( colors.primary ); 
+  //console.log( colors.primary ); 
   // prints #5d9cec
 }]);
 ```
@@ -520,7 +520,7 @@ Defines the media queries used in the css accessible from JS
 
 ``` js
 App.controller('ExampleCtrl', ['APP_MEDIAQUERY', function(mq) {
-  console.log( mq.mobile ); 
+ // console.log( mq.mobile ); 
   // prints 480
 }]);
 ```

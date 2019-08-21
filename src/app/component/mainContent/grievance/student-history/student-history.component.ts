@@ -24,7 +24,7 @@ export class StudentHistoryComponent implements OnInit {
 
   viewDetailsofGrievance(index: any): void {
     this.activeGrievance = this.historyList[index];
-    console.log(this.activeGrievance);
+   // console.log(this.activeGrievance);
   }
 
 }

@@ -41,7 +41,7 @@ export class LoginComponent implements OnInit {
     this.httpClient.post(ROOT_URL + '/controller/Login.php', this.data, { headers: headers })
       .subscribe(
         response => {
-          console.log(response)
+          //console.log(response)
           this.responsetext = 'Login Successful !';
           this.user.emit(response);
           this.loginButtondisabled = false;

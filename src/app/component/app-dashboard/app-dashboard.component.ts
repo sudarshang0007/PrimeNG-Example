@@ -16,6 +16,5 @@ export class AppDashboardComponent {
   ];
   constructor(){
    this.imporatantLinks= importantLinks;
-   console.log(this.imporatantLinks);
   }
 }
