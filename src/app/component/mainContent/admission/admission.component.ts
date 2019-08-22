@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { admissionLink } from 'src/app/constant/admission.constant';
 
 @Component({
   selector: 'app-admission',
@@ -7,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AdmissionComponent implements OnInit {
 
+  readonly admissionLink = admissionLink;
   constructor() { }
 
   ngOnInit() {

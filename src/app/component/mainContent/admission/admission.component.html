@@ -203,13 +203,16 @@
       <div id="Links" class="collapse"  aria-labelledby="headingThree" data-parent="#accordionExample">
         <div class="card-body">
                 <ul>
-                  <li>
+               <!--    <li>
                     <a href="./assets/documentation/18_19_admission/InstitutelevelAdmissionschedule.pdf" target="_blank">1. Schedule of First Year B. Pharmacy admission 2018-19 under Institute level quota and Seats remaining after
                       CAP rounds</a>
                   </li>
                   <li>
                     <a href="./assets/documentation/18_19_admission/Advertisement18-19.jpg" target="_blank">2. Advertisement for First Year B. Pharmacy admission 2018-19 under Institute level quota and Seats remaining
                       after CAP rounds</a>
+                  </li> -->
+                  <li *ngFor="let link of admissionLink">
+                      <a href="../assets/documentation/admission/19-20/{{link.filename ? link.filename : link.link}}" target="_blank">{{link.displayText}}</a>
                   </li>
                 </ul>
         </div>
