@@ -1,5 +1,6 @@
 <div class="grid-container">
 
+
   <!--   <mat-grid-list cols="2" rowHeight="350px">
     <mat-grid-tile *ngFor="let card of cards" [colspan]="card.cols" [rowspan]="card.rows">
       <mat-card class="dashboard-card">
@@ -23,6 +24,9 @@
   </mat-grid-list> -->
 
   <div class="container">
+      <div id="ribbon">
+          <span id="content">Tevo Sada Dnynamaya Pradip !</span>
+        </div>
     <!--  <h1 class="mat-h1">Dashboard</h1> -->
     <!-- Heading Row -->
     <div class="row my-4">
@@ -32,7 +36,7 @@
       <!-- /.col-lg-8 -->
       <div class="col-lg-4 text-justify">
         <p class="ribbon">
-          <span class="text"><strong class="bold">Vision</strong>
+          <span class="text"><strong class="bold"></strong>Vision
           </span>
         </p>
         <!--     <h5>Vision</h5> -->
@@ -41,11 +45,12 @@
             area"</small>
         </p>
         <p class="ribbon">
-          <span class="text"><strong class="bold">Mission</strong>
+          <span class="text"><strong class="bold"></strong>Mission
           </span>
         </p>
         <p>
-          <small>"To build up confidence and knowledge about medicine in the students to deliver best professional and ethical service
+          <small>"To build up confidence and knowledge about medicine in the students to deliver best professional and
+            ethical service
             to the mankind.
             <p>To imbibe creative and innovative pharmacy practice amongst under graduates students.
               <br>To educate and train the students to discover and manufacture drugs of quality."</p>
@@ -57,11 +62,15 @@
     <!-- /.row -->
 
     <!-- Call to Action Well -->
-    <div class="card text-white bg-secondary my-4 text-center">
+    <!--     <div class="card text-white bg-secondary my-4 text-center">
       <div class="card-body">
         <p class="text-white m-0">Tevo Sada Dnynamaya Pradip !</p>
       </div>
-    </div>
+    </div> -->
+
+
+
+
 
     <!-- Content Row -->
     <div class="row">
@@ -69,7 +78,7 @@
         <div class="card h-100">
           <div class="card-body">
             <h5 class="card-title text-center">Salient Features</h5>
-            
+
             <div class="card-text">
               <ul>
                 <li>Affilated to Solapur University</li>
@@ -107,8 +116,10 @@
           <div class="card-body">
             <h5 class="card-title text-center">Notifications</h5>
             <div class="card-text">
-                <!-- <a class="twitter-timeline" href="https://twitter.com/svhagavane?ref_src=twsrc%5Etfw">Tweets by svhagavane</a> 
-                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
+              <ul>
+                <li *ngFor="let link of admissionLink"> <a href="../assets/documentation/admission/19-20/{{link.filename ? link.filename : link.link}}"
+                    target="_blank">{{link.displayText}}</a></li>
+              </ul>
             </div>
           </div>
 

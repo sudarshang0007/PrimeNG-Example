@@ -1,4 +1,9 @@
 <div class="container">
+    <div class="container">
+        <div class="s_content">
+            <h1 class="s_ribbon">Faculty</h1>
+            <hr>
+ 
 <div class="row">
 
   <div class="col-sm-4 profile" *ngFor="let faculty of facultyDetails ">
@@ -7,14 +12,15 @@
         <img src="Card" src="{{faculty.image}}">
       </p-header>
 
-      <h5 class="mb-0">{{faculty.name}}</h5>
+      <h5 class="mb-0">{{faculty.name}}</h5> <br>
       <p class="card-subtitle mb-2 text-muted">Designation: {{faculty.designation}}</p>
       <p class="card-subtitle mb-2 text-muted">Qualification: {{faculty.Qualification}}</p>
       <p class="card-subtitle mb-2 text-muted">Specialization: {{faculty.specialization}}</p>
       <p class="card-subtitle mb-2 text-muted">Experience: {{faculty.experience}}</p>
-      <p class=" mat-menu-item">Email:
+      <p class="card-subtitle mb-2 text-muted">Email:
         <a href="mailTo://{{faculty.email}}" >{{faculty.email}}</a>
       </p>
     </p-card>
   </div>
+</div>
 </div></div>
