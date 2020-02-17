@@ -1,4 +1,4 @@
-export const applicationName = 'My test Application'; // 'College of Pharmacy, Akluj';
+export const applicationName = 'College of Pharmacy, Akluj';
 export const facultyDetails = [{
     'name': 'Dr. P. V. Bodhe',
     'designation': 'Principal',
