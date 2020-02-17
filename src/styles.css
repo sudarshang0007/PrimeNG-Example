@@ -9,3 +9,128 @@ body { margin: 0; }
 main-container {
     padding:10px;
 }
+
+/*** Ribbon css *//
+
+.ribbon{
+    font-size:20px;
+    position:relative;
+    display:inline-block;
+    margin:5em;
+    text-align:center;
+  }
+  .text{
+    display:inline-block;
+    padding:0.5em 1em;
+    min-width:22em;
+    line-height:1.2em;
+    background: #FFD72A;
+    position:relative;
+  }
+  .ribbon:after,.ribbon:before,
+  .text:before,.text:after,
+  .bold:before{
+    content:'';
+    position:absolute;
+    border-style:solid;
+  }
+  .ribbon:before{
+    top:0.3em; left:0.2em;
+    width:100%; height:100%;
+    border:none;
+    background:#EBECED;
+    z-index:-2;
+  }
+  .text:before{
+    bottom:100%; left:0;
+    border-width: .5em .7em 0 0;
+    border-color: transparent #FC9544 transparent transparent;
+  }
+  .text:after{
+    top:100%; right:0;
+    border-width: .5em 2em 0 0;
+    border-color: #FC9544 transparent transparent transparent;
+  }
+/*   .ribbon:after, .bold:before{
+    top:0.5em;right:-2em;
+    border-width: 1.1em 1em 1.1em 3em;
+    border-color: #FECC30 transparent #FECC30 #FECC30;
+    z-index:-1;
+  } */
+  .bold:before{
+    border-color: #EBECED transparent #EBECED #EBECED;
+    top:0.7em;
+    right:-2.3em;
+  }
+  
+
+  .s_content{
+    background:#e6e2c8;
+    min-height: 3.750em; 
+    margin: 2em auto;
+    padding: 1.250em;
+    border-radius: 0.313em;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.5);
+    line-height: 1.5em;
+    color: #292929;
+  }
+  
+  .s_ribbon{
+    position:relative;
+    padding: 0 0.5em;
+    font-size:2.000em;
+    margin: 0 0 0 -0.625em;
+    line-height: 1.875em;
+    color: #e6e2c8;
+    border-radius: 0 0.156em 0.156em 0;
+    background: rgb(123, 159, 199);
+    box-shadow: -1px 2px 3px rgba(0,0,0,0.5);
+  }
+  
+  .s_ribbon:before, .s_ribbon:after{
+    position:absolute;
+    content: '';
+    display: block;
+  }
+  
+  .s_ribbon:before{
+    width: 0.469em;
+    height: 100%;
+    padding: 0 0 0.438em;
+    top:0;
+    left: -0.469em;
+    background:inherit;
+    border-radius: 0.313em 0 0 0.313em;
+  }
+  
+  .s_ribbon:after{
+    width: 0.313em;
+    height: 0.313em;
+    background: rgba(0,0,0,0.35);
+    bottom: -0.313em;
+    left: -0.313em;
+    border-radius: 0.313em 0 0 0.313em;
+    box-shadow: inset -1px 2px 2px rgba(0,0,0,0.3);
+  }
+  
+  @media (max-width: 600px) {
+    
+    body{
+      font-size:0.875em;
+    }
+    
+    .s_ribbon{
+      line-height: 1.143em;
+      padding: 0.5em;
+    }
+    
+    .s_ribbon:before, .s_ribbon:after{
+      font-size: 0.714em;
+    }
+    
+  }
+
+  a{
+    color: #825582;
+    text-decoration: none;
+  }

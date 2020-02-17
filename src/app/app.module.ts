@@ -21,7 +21,18 @@ import { AdmissionComponent } from './component/mainContent/admission/admission.
 import { PrincipalComponent } from './component/mainContent/aboutus/principal/principal.component';
 import { FacultyComponent } from './component/mainContent/aboutus/faculty/faculty.component';
 import { ContactComponent } from './component/mainContent/aboutus/contact/contact.component';
-import {CardModule} from 'primeng/card';
+import { CardModule } from 'primeng/card';
+import { GalleryViewerComponent } from './component/GalleryPopup/gallery-viewer/gallery-viewer.component';
+import { MatTabsModule } from '@angular/material/tabs';
+import { StudentDetailsComponent } from './component/mainContent/student/student-details/student-details.component';
+import { HeaderFlagComponent } from './component/header-flag/header-flag.component';
+import { GrievanceComponent } from './component/mainContent/grievance/grievance.component';
+import { AddComponent } from './component/mainContent/grievance/add/add.component';
+import { LoginComponent } from './component/mainContent/grievance/login/login.component';
+import { HttpClientModule } from '../../node_modules/@angular/common/http';
+import { StudentHistoryComponent } from './component/mainContent/grievance/student-history/student-history.component';
+import { FormsModule } from '../../node_modules/@angular/forms';
+import { NgxSpinnerModule } from 'ngx-spinner';
 
 
 
@@ -41,10 +52,19 @@ import {CardModule} from 'primeng/card';
     AdmissionComponent,
     PrincipalComponent,
     FacultyComponent,
-    ContactComponent
+    ContactComponent,
+    GalleryViewerComponent,
+    StudentDetailsComponent,
+    HeaderFlagComponent,
+    GrievanceComponent,
+    AddComponent,
+    LoginComponent,
+    StudentHistoryComponent
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
+    FormsModule,
     BrowserAnimationsModule,
     ButtonModule,
     GalleriaModule,
@@ -58,7 +78,9 @@ import {CardModule} from 'primeng/card';
     MatCardModule,
     MatMenuModule,
     AppRoutingModule,
-    CardModule
+    CardModule,
+    MatTabsModule,
+    NgxSpinnerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -14,6 +14,7 @@ import { GalleryComponent } from './component/mainContent/gallery/gallery.compon
 import { PrincipalComponent } from './component/mainContent/aboutus/principal/principal.component';
 import { FacultyComponent } from './component/mainContent/aboutus/faculty/faculty.component';
 import { ContactComponent } from './component/mainContent/aboutus/contact/contact.component';
+import { GrievanceComponent } from './component/mainContent/grievance/grievance.component';
 
 const routes: Routes = [
   { path: '', component: AppDashboardComponent },
@@ -24,7 +25,8 @@ const routes: Routes = [
   { path: 'student', component: StudentComponent },
   { path: 'TnPcell', component: TnPcellComponent },
   { path: 'alumni', component: AlumniComponent },
-  { path: 'committee', component: CommitteeComponent },
+  { path: 'committee', component: CommitteeComponent }, 
+  { path: 'grievance', component:GrievanceComponent},
   { path: 'gallery', component: GalleryComponent },
   { path: 'principal', component: PrincipalComponent },
   { path: 'faculty', component: FacultyComponent },

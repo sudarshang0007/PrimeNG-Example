@@ -1,0 +1,53 @@
+<div class="col-lg-12">
+
+
+
+</div>
+<form  #uploadForm="ngForm">
+    <div class="form-row">
+  <div class="form-group col-md-8">
+    <label for="title">Grievance Title</label>
+    <input type="text" class="form-control" id="title" name="title" [(ngModel)]="title" maxlength="50" placeholder="Specify the title"    required>
+    <small class="text-muted">Specify the subject line for your grievance.</small>
+  </div>
+  <div class="form-group col-md-4">
+      <label for="Type">Type</label>
+      <select class="form-control" id="type" name="type" [(ngModel)]="type" required>
+        <option>Academic</option>
+        <option>Non-Academic</option>
+      </select>
+
+    </div>
+    </div>
+  <div class="form-row">
+    <div class="form-group col-md-4">
+      <label for="name">name</label>
+      <input type="text" class="form-control" id="name" name="name" maxlength="25" [(ngModel)]="name" placeholder="Enter Your Name" required>
+      <small class="text-muted">Name length should be upto 25 characters. </small>
+    </div>
+    <div class="form-group col-md-4">
+      <label for="contact">Contact No.</label>
+      <input type="number" class="form-control" id="contact" name="contact" [(ngModel)]="contact" minlength="10" placeholder="Specify the title" required>
+    <small class="text-muted">contact length must be 10 digits</small>
+    </div>
+
+    <div class="form-group col-md-4">
+        <label for="reporterType">Reporter Type</label>
+        <select class="form-control" id="reporterType" name="reporterType" [(ngModel)]="reporterType" required>
+          <option>Student</option>
+          <option>Guardian</option>
+          <option>Other</option>
+        </select>
+        <small class="text-muted">e.g. Student or Guardian etc.</small>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="details">Describe in details (max. 750 Characters)</label>
+    <textarea class="form-control" id="details" name="details" [(ngModel)]="details" rows="4" placeholder="Description goes here" required></textarea>
+    <small class="text-muted">Please describe the grievance in details.</small>
+  </div>
+
+  <input type="hidden" name="date" id="date" value="{{date | date: 'dd/MMM/yyyy'}}">
+  <button type="button" class="btn btn-primary" (click)="insertGrievance();uploadForm.reset()" 
+  [disabled]="!(uploadForm.valid && uploadForm.touched)" >Submit</button>
+</form>

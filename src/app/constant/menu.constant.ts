@@ -13,6 +13,7 @@ export const menuItems = [
     { name: "Activities", icon: "", link: "/activities" },
     { name: "Student Corner", icon: "", link: "/student" },
     { name: "Training & Placement", icon: "", link: "/TnPcell" },
+    { name: "Grievance Portal", icon: "", link: "/grievance" },
     { name: "Alumni", icon: "", link: "/alumni" },
     { name: "Committee", icon: "", link: "/committee" },
     { name: "Gallery", icon: "", link: "/gallery" },
