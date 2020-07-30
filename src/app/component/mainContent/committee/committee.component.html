@@ -1,5 +1,24 @@
 <div class="container">
     <div class="s_content">
         <h1 class="s_ribbon">Commitee</h1>
-        <hr></div>
+        <hr>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="list-group">
+                    <a *ngFor="let link of committeeList" class="list-group-item list-group-item-action"
+                        href="{{link.filename ? link.filename : link.link}}" target="_blank">
+                        <span>
+                            {{link.displayText}} </span>
+
+                        <span><i class="material-icons pull-right">
+                                link
+                            </i></span>
+
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
 </div>
