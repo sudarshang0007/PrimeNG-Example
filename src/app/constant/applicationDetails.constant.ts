@@ -1,4 +1,4 @@
-export const applicationName = 'My test Application'; // 'College of Pharmacy, Akluj';
+export const applicationName = 'College of Pharmacy, Akluj';
 export const facultyDetails = [{
     'name': 'Dr. P. V. Bodhe',
     'designation': 'Principal',
@@ -10,21 +10,12 @@ export const facultyDetails = [{
 
     , {
     'name': 'Mr. A. S. Bhanawase',
-    'designation': 'Asst. Prof.',
+    'designation': 'Professor',
     'Qualification': 'M.Pharm.',
     'specialization': 'Pharmaceutical Chemistry',
     'experience': 'Teaching',
     'email': 'anil.bhanawase@gmail.com'
-},
-{
-    'name': 'Mr. S. A. Khedkar',
-    'designation': 'Asst. Prof.',
-    'Qualification': 'M.Pharm.',
-    'specialization': 'Pharmaceutical Chemistry',
-    'experience': 'Teaching 8 yrs',
-    'email': 'samratkhedkar@yahoo.in'
-}
-    , {
+}, {
     'name': 'Mrs. N. S. Kajale',
     'designation': 'Asst. Prof.',
     'Qualification': 'M.Pharm.',
@@ -115,10 +106,52 @@ export const facultyDetails = [{
     'email': 'mukundgade09@gmail.com'
 },
 {
-    'name': 'Miss. U. S. Hon',
+    'name': 'Mr. Mitkal Mahesh D.',
     'designation': 'Asst. Prof.',
     'Qualification': 'M.Pharm.',
-    'specialization': 'Pharmacognocy',
-    'experience': 'Teaching 6 Months',
+    'specialization': '',
+    'experience': 'Teaching',
+    'email': ''
+},{
+    'name': 'Mr. Raje-Ghadage Swapnil H.',
+    'designation': 'Asst. Prof.',
+    'Qualification': 'M.Pharm.',
+    'specialization': '',
+    'experience': 'Teaching',
+    'email': ''
+},{
+    'name': 'Miss. Kaharat Shunbhangi Hari.',
+    'designation': 'Asst. Prof.',
+    'Qualification': 'M.Pharm.',
+    'specialization': '',
+    'experience': 'Teaching',
+    'email': ''
+},{
+    'name': 'Mr. Ankalagi Bapurao S.',
+    'designation': 'Asst. Prof.',
+    'Qualification': 'M.Pharm.',
+    'specialization': '',
+    'experience': 'Teaching',
+    'email': ''
+},{
+    'name': 'Miss. Kashid Snehal U.',
+    'designation': 'Asst. Prof.',
+    'Qualification': 'M.Pharm.',
+    'specialization': '',
+    'experience': 'Teaching',
+    'email': ''
+},{
+    'name': 'Mr. Devkate Ganesh S.',
+    'designation': 'Lecture (CHB)',
+    'Qualification': 'M.Pharm.',
+    'specialization': '',
+    'experience': 'Teaching',
+    'email': ''
+},{
+    'name': 'Mr.Borawake Kanchan Suraj.',
+    'designation': 'Lecture (CHB)',
+    'Qualification': 'M.Pharm.',
+    'specialization': '',
+    'experience': 'Teaching',
     'email': ''
 }];

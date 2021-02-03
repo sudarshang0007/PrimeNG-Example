@@ -117,7 +117,7 @@
             <h5 class="card-title text-center">Notifications</h5>
             <div class="card-text">
               <ul>
-                <li *ngFor="let link of admissionLink"> <a href="../assets/documentation/admission/19-20/{{link.filename ? link.filename : link.link}}"
+                <li *ngFor="let link of admissionLink"> <a href="{{link.filename ? link.filename : link.link}}"
                     target="_blank">{{link.displayText}}</a></li>
               </ul>
             </div>
@@ -130,5 +130,35 @@
     </div>
     <!-- /.row -->
 
+  </div>
+</div>
+
+<input type="hidden" id="admission_notice" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" >
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Admission Notice</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        शिक्षण प्रसारक मंडळ अकलूज संचलित, कॉलेज ऑफ फार्मसी (बी. फार्मसी), माळेवाडी-अकलूज 
+        या महाविद्यालयामध्ये  चालू शैक्षणिक वर्षात प्रथम वर्ष बी. फार्मसी मध्ये प्रवेश घेवू इच्छित असणाऱ्या विद्यार्थ्यांची प्रवेशपूर्व नाव नोंदणी सुरु आहे. 
+        यासाठी  विद्यार्थ्यांनी खाली दिलेल्या लिंकवर क्लिक करून ऑनलाइन माहिती 
+        सादर करावी. <br>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdyfRQO2--1z6mRXWk1fylCl7VxLL7wUzLUjzkBM-95cxJB3Q/viewform?usp=sf_link" target="_blank" class="btn btn-link">माहिती भरण्यास येथे क्लिक करा </a>
+<br>
+        अधिक माहिती साठी खाली दिलेल्या फोन नंबरवर संपर्क साधावा. <br>
+<a href="tel:+02185224243">(02185) 224243</a>, <a href="tel:+9822333441">9822333441</a>, <a href="tel:+9975865649">9975865649</a>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
   </div>
 </div>
