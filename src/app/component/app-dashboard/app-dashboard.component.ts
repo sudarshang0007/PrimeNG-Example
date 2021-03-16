@@ -21,6 +21,5 @@ export class AppDashboardComponent implements AfterViewInit{
    this.imporatantLinks= importantLinks;
   }
   ngAfterViewInit(): void {
-    document.getElementById('admission_notice').click();
   }
 }
