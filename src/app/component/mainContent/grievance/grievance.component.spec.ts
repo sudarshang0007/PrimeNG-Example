@@ -1,3 +1,5 @@
+import { HttpClientModule } from '@angular/common/http';
+import { NO_ERRORS_SCHEMA } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { GrievanceComponent } from './grievance.component';
@@ -8,9 +10,11 @@ describe('GrievanceComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ GrievanceComponent ]
+      declarations: [GrievanceComponent],
+      imports: [HttpClientModule],
+      schemas: [NO_ERRORS_SCHEMA]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

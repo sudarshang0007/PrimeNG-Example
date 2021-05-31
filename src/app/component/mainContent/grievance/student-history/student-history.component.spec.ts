@@ -1,5 +1,5 @@
+import { HttpClientModule } from '@angular/common/http';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { StudentHistoryComponent } from './student-history.component';
 
 describe('StudentHistoryComponent', () => {
@@ -8,9 +8,10 @@ describe('StudentHistoryComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ StudentHistoryComponent ]
+      declarations: [StudentHistoryComponent],
+      imports: [HttpClientModule]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

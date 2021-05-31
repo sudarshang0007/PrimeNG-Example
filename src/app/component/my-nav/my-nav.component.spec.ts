@@ -1,6 +1,7 @@
 
+import { NO_ERRORS_SCHEMA } from '@angular/core';
 import { fakeAsync, ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { MatMenuModule } from '@angular/material';
 import { MyNavComponent } from './my-nav.component';
 
 describe('MyNavComponent', () => {
@@ -9,9 +10,11 @@ describe('MyNavComponent', () => {
 
   beforeEach(fakeAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ MyNavComponent ]
+      declarations: [MyNavComponent],
+      imports:[MatMenuModule],
+      schemas: [NO_ERRORS_SCHEMA]
     })
-    .compileComponents();
+      .compileComponents();
 
     fixture = TestBed.createComponent(MyNavComponent);
     component = fixture.componentInstance;
