@@ -25,7 +25,7 @@
     "bootstrap": "^4.1.1",
     "classlist.js": "^1.1.20150312",
     "core-js": "^2.5.4",
-    "jquery": "^3.3.1",
+    "jquery": "^3.5.0",
     "mdbootstrap": "^4.5.5",
     "ngx-spinner": "^6.1.2",
     "popper.js": "^1.14.3",
