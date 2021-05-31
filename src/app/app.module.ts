@@ -33,8 +33,8 @@ import { HttpClientModule } from '../../node_modules/@angular/common/http';
 import { StudentHistoryComponent } from './component/mainContent/grievance/student-history/student-history.component';
 import { FormsModule } from '../../node_modules/@angular/forms';
 import { NgxSpinnerModule } from 'ngx-spinner';
-import { NoticePaneComponent } from './component/app-dashboard/notice-pane/notice-pane.component';
 
+import { NoticePaneComponent } from './component/app-dashboard/notice-pane/notice-pane.component';
 
 
 @NgModule({

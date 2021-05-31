@@ -1,6 +1,6 @@
 
 import { fakeAsync, ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { NoticePaneComponent } from '../../component/app-dashboard/notice-pane/notice-pane.component';
 import { AppDashboardComponent } from './app-dashboard.component';
 
 describe('AppDashboardComponent', () => {
@@ -9,7 +9,7 @@ describe('AppDashboardComponent', () => {
 
   beforeEach(fakeAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ AppDashboardComponent ]
+      declarations: [ AppDashboardComponent, NoticePaneComponent ]
     })
     .compileComponents();
 
