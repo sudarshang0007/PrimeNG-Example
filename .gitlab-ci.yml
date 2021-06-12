@@ -30,6 +30,7 @@ test:
   before_script:
     - npm install
     - npm run build --prod
+    - chmod -R 755 ./dist
   script:
     - echo "Deploy build to Server"
     - source ./script/ftp.sh
