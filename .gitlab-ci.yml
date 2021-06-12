@@ -27,11 +27,8 @@ stages:
 test:
   stage: test
   before_script:
-    - ls
     - npm install
     - npm run build --prod
-    - ls
-    - ssh
   script:
-    - npm -version
+    - echo "Deploy build to Server"
     - source ./script/ftp.sh
