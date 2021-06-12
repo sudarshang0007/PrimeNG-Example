@@ -1,4 +1,4 @@
-image: sudarshang0007/ubuntu-node:1.0.0
+image: sudarshang0007/ubuntu-ncftp
 variables:
   FF_USE_FASTZIP: "true"
 
@@ -33,4 +33,5 @@ test:
     - chmod -R 755 ./dist
   script:
     - echo "Deploy build to Server"
-    - source ./script/ftp.sh
+    - ncftpput -u u421383828.sudarshan -p P@ssw0rd copakluj.org / dist/*
+    #- source ./script/ftp.sh
