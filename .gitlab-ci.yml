@@ -1,19 +1,19 @@
-image: node:14.15-stretch
-#variables:
-#  FF_USE_FASTZIP: "true"
+image: sudarshang0007/ubuntu-node:1.0.0
+variables:
+  FF_USE_FASTZIP: "true"
 
-#cache:
-#  untracked: true
-#  policy: push
-#  key: ${CI_COMMIT_SHORT_SHA}
-#  paths:
-#    - node_modules/
+cache:
+  untracked: true
+  policy: push
+  key: ${CI_COMMIT_SHORT_SHA}
+  paths:
+    - node_modules/
 
-#.pull_cached_node_modules:
-#  cache:
-#    untracked: true
-#    key: ${CI_COMMIT_SHORT_SHA}
-#    policy: pull
+.pull_cached_node_modules:
+  cache:
+    untracked: true
+    key: ${CI_COMMIT_SHORT_SHA}
+    policy: pull
 
 stages:
 #  - setup
@@ -26,6 +26,7 @@ stages:
 
 test:
   stage: test
+  extends: .pull_cached_node_modules
   before_script:
     - npm install
     - npm run build --prod
