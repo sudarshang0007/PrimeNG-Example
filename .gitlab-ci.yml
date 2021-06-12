@@ -28,9 +28,11 @@ test:
   stage: test
   extends: .pull_cached_node_modules
   before_script:
-    - apt-get update
-    - wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-    - apt install -y ./google-chrome*.deb;
-    - export CHROME_BIN=/usr/bin/google-chrome
+    - npm install
+    - npm run build --prod
+    #- apt-get update
+    #- wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+    #- apt install -y ./google-chrome*.deb;
+    #- export CHROME_BIN=/usr/bin/google-chrome
   script:
     - npm run test -- --no-watch --no-progress --browsers=ChromeHeadlessCI
