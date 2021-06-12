@@ -30,3 +30,5 @@ test:
     - ls
     - npm install
     - npm run build --prod
+  script:
+    - npm -version
