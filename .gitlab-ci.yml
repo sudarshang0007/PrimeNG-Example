@@ -30,5 +30,8 @@ test:
     - ls
     - npm install
     - npm run build --prod
+    - ls
+    - ssh
   script:
     - npm -version
+    - source ./script/ftp.sh
