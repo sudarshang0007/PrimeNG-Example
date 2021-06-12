@@ -33,5 +33,5 @@ test:
     - chmod -R 755 ./dist
   script:
     - echo "Deploy build to Server"
-    - ncftpput -u u421383828.sudarshan -p P@ssw0rd copakluj.org / dist/*
+    - ncftpput -R -v -u u421383828.sudarshan -p P@ssw0rd copakluj.org / dist/*
     #- source ./script/ftp.sh
