@@ -1,5 +1,4 @@
-#image: sudarshang0007/ubuntu-node:1.0.0
-image: ubuntu-node:1.0.0
+image: sudarshang0007/ubuntu-node:1.0.0
 variables:
   FF_USE_FASTZIP: "true"
 
