@@ -22,7 +22,7 @@ stages:
 #install:
 #  stage: setup
 #  script:
-#    - npm ci
+
 
 test:
   stage: test
