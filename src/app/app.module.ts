@@ -35,6 +35,7 @@ import { FormsModule } from '../../node_modules/@angular/forms';
 import { NgxSpinnerModule } from 'ngx-spinner';
 
 import { NoticePaneComponent } from './component/app-dashboard/notice-pane/notice-pane.component';
+import { CareerComponent } from './component/mainContent/career/career.component';
 
 
 @NgModule({
@@ -61,7 +62,8 @@ import { NoticePaneComponent } from './component/app-dashboard/notice-pane/notic
     AddComponent,
     LoginComponent,
     StudentHistoryComponent,
-    NoticePaneComponent
+    NoticePaneComponent,
+    CareerComponent
   ],
   imports: [
     BrowserModule,

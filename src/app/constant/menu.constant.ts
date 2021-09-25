@@ -17,4 +17,5 @@ export const menuItems = [
     { name: "Alumni", icon: "", link: "/alumni" },
     { name: "Committee", icon: "", link: "/committee" },
     { name: "Gallery", icon: "", link: "/gallery" },
-    { name: "Contact us", icon: "", link: "/contact" }];
+    { name: "Contact us", icon: "", link: "/contact" },
+    { name: "Career", icon: "", link: "/career" }];
