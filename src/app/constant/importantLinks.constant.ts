@@ -4,4 +4,5 @@ export const importantLinks = [
     {displayText: 'National Academy Depository', filename: '', link: 'http://www.nad.gov.in'},
     {displayText: 'NAD - Students User Guide', filename: '', link: ''},
     {displayText: 'Mandatory Disclosure', filename: './assets/documentation/imp/Mandatory Disclosure.pdf', link: ''},
+    {displayText: 'Audit Report 2020-21', filename: './assets/documentation/imp/AuditReport2020_21.pdf', link: ''},
 ];
