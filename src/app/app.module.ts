@@ -5,7 +5,14 @@ import { ButtonModule } from 'primeng/button';
 import { GalleriaModule } from 'primeng/galleria';
 import { AppComponent } from './app.component';
 import { LayoutModule } from '@angular/cdk/layout';
-import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule, MatGridListModule, MatCardModule, MatMenuModule } from '@angular/material';
+import { MatToolbarModule } from '@angular/material/toolbar'
+import { MatSidenavModule } from '@angular/material/sidenav'
+import { MatIconModule } from '@angular/material/icon'
+import { MatListModule } from '@angular/material/list'
+import { MatGridListModule } from '@angular/material/grid-list'
+import { MatCardModule } from '@angular/material/card'
+import { MatMenuModule } from '@angular/material/menu'
+import { MatButtonModule } from '@angular/material/button';
 import { AppDashboardComponent } from './component/app-dashboard/app-dashboard.component';
 import { MyNavComponent } from './component/my-nav/my-nav.component';
 import { AboutusComponent } from './component/mainContent/aboutus/aboutus.component';
@@ -32,7 +39,7 @@ import { LoginComponent } from './component/mainContent/grievance/login/login.co
 import { HttpClientModule } from '../../node_modules/@angular/common/http';
 import { StudentHistoryComponent } from './component/mainContent/grievance/student-history/student-history.component';
 import { FormsModule } from '../../node_modules/@angular/forms';
-import { NgxSpinnerModule } from 'ngx-spinner';
+// import { NgxSpinnerModule } from 'ngx-spinner';
 
 import { NoticePaneComponent } from './component/app-dashboard/notice-pane/notice-pane.component';
 import { CareerComponent } from './component/mainContent/career/career.component';
@@ -84,7 +91,7 @@ import { CareerComponent } from './component/mainContent/career/career.component
     AppRoutingModule,
     CardModule,
     MatTabsModule,
-    NgxSpinnerModule
+    //NgxSpinnerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
