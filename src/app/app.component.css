@@ -1,0 +1,11 @@
+.jumbotron{
+    padding: 1rem 1rem !important;
+    margin-bottom: 0px !important;
+}
+
+header{
+    top: 0;
+    z-index: 1071;
+    position: -webkit-sticky;
+    position: sticky;
+}

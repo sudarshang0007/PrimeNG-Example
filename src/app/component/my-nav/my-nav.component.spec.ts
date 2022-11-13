@@ -1,7 +1,7 @@
 
 import { NO_ERRORS_SCHEMA } from '@angular/core';
 import { fakeAsync, ComponentFixture, TestBed } from '@angular/core/testing';
-import { MatMenuModule } from '@angular/material';
+import { MatMenuModule } from '@angular/material/menu';
 import { MyNavComponent } from './my-nav.component';
 
 describe('MyNavComponent', () => {

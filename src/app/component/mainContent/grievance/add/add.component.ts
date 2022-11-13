@@ -1,7 +1,7 @@
 import { Component, OnInit, EventEmitter, Output } from '@angular/core';
-import { HttpClient, HttpHeaders } from '../../../../../../node_modules/@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { ROOT_URL } from '../../../../constant/app.constant';
-import { NgxSpinnerService } from '../../../../../../node_modules/ngx-spinner';
+import { NgxSpinnerService } from 'ngx-spinner';
 
 @Component({
   selector: 'app-add',

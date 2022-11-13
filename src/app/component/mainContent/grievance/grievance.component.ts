@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { GrievanceServiceService } from '../../../grievance-service.service';
-import { NgxSpinnerService } from '../../../../../node_modules/ngx-spinner';
+import { NgxSpinnerService } from 'ngx-spinner';
 
 @Component({
   selector: 'app-grievance',
