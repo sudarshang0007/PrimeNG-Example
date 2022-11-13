@@ -1,4 +1,28 @@
-<mat-sidenav-container class="sidenav-container">
+
+<nav class="navbar navbar-expand-lg navbar-light bg-warning text-white">
+  <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item" *ngFor="let menu of menuList" [ngClass]="menu.subMenu ? 'dropdown':'' ">
+        {{menu.subMenu?.lenght}}
+        <a *ngIf="menu.subMenu" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown"
+          aria-expanded="false">
+          {{menu.name}}
+        </a>
+        <a *ngIf="!menu.subMenu" class="nav-link" [routerLink]="menu.link ? menu.link : '' ">{{menu.name}}</a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" *ngFor="let submenu of menu.subMenu" [routerLink]="submenu.link">{{submenu.name}}</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- <mat-sidenav-container class="sidenav-container">
   <mat-sidenav #drawer class="sidenav" fixedInViewport="true" [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'" [opened]="false">
     <mat-toolbar color="primary">Menu</mat-toolbar>
     <mat-nav-list>
@@ -18,7 +42,6 @@
   </mat-sidenav>
   <mat-sidenav-content>
     <mat-toolbar color="primary">
-      <!-- *ngIf="isHandset$ | async" -->
       <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
@@ -26,4 +49,4 @@
     </mat-toolbar>
   </mat-sidenav-content>
 
-</mat-sidenav-container>
+</mat-sidenav-container> -->

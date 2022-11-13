@@ -1,5 +1,5 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
-import { HttpClient, HttpHeaders } from '../../../../../../node_modules/@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { ROOT_URL } from '../../../../constant/app.constant';
 import { GrievanceServiceService } from '../../../../grievance-service.service';
 

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { NgxSpinnerService } from '../../node_modules/ngx-spinner';
+import { NgxSpinnerService } from 'ngx-spinner';
+import { applicationName } from './constant/applicationDetails.constant';
 
 @Component({
   selector: 'app-root',
@@ -9,6 +10,7 @@ import { NgxSpinnerService } from '../../node_modules/ngx-spinner';
 export class AppComponent {
   images: any[];
   title = 'app';
+  readonly  applicationName = applicationName;
 
   constructor(private spinner: NgxSpinnerService) {
     this.images = [];

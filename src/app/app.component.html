@@ -1,12 +1,18 @@
-
-
-<div>
-    <my-nav style="z-index: 1;position: fixed;top:0px;right:0px;left:0px;">
-    </my-nav>
-</div>
-<div style="padding:25px 5px 10px 5px;">
-    <br>
-    <br>
-    <router-outlet></router-outlet>
-    <ngx-spinner></ngx-spinner>
+<header class="">
+    <div>
+        <div class="bg-white">
+            <img src="../assets/img/banner.PNG" alt="" height="100px">
+        </div>
+      <!--   <div class="jumbotron">
+            <h1 class="display-5">{{applicationName}}</h1>
+        </div> -->
+        <my-nav>
+        </my-nav>
+    </div>
+</header>
+<div class="container-fluid">
+    <div >
+        <router-outlet></router-outlet>
+        <ngx-spinner></ngx-spinner>
+    </div>
 </div>
